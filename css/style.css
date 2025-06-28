@@ -1,0 +1,182 @@
+ * {
+     box-sizing: border-box;
+     --primary-bg: #1e202b;
+     --primary-text: white;
+     --secondary-text: #75756c;
+     --light-text: #bac1c8;
+     --bs-table-bg: #1e202b;
+     --secondary-bg: #009ad8;
+
+     --cell13: #2d303d;
+     --cell2: #222530;
+     --cell46: #323544;
+     --cell5: #262936;
+ }
+
+
+ body {
+     margin: 0;
+     padding: 0;
+ }
+
+ .primary-bg {
+     background-color: var(--primary-bg);
+ }
+
+ .text-blue {
+     color: var(--secondary-bg);
+ }
+
+ .logo {
+     width: 6rem;
+     height: 3rem;
+
+ }
+
+ .site-logo,
+ a {
+     margin: 0.5rem 1rem;
+     text-decoration: none;
+     color: var(--primary-text);
+
+ }
+
+ .site-description {
+     font-size: 0.6rem;
+ }
+
+ .active-link {
+     border: 2px solid var(--secondary-bg);
+
+     a {
+         color: var(--secondary-bg);
+     }
+ }
+
+ .not-active-link {
+     text-wrap: nowrap;
+     transition: all 0.3s ease-in-out;
+     border: 2px solid transparent;
+
+     a {
+         transition: all 0.3s ease-in-out;
+
+     }
+
+ }
+
+ .not-active-link:hover {
+     text-wrap: nowrap;
+     border-color: var(--secondary-bg);
+
+     a {
+         color: var(--secondary-bg);
+     }
+ }
+
+ main {
+     background-image: url('../images/banner.png');
+     background-repeat: no-repeat;
+ }
+
+ .form-control:focus {
+     background-color: var(--primary-bg);
+     box-shadow: none;
+     top: 0;
+     right: 0;
+ }
+
+ .form-control::placeholder {
+     color: var(--secondary-text);
+     font-size: 0.8rem;
+
+
+ }
+
+ .find-btn {
+     font-size: 0.8rem;
+     padding-top: 0.9rem;
+     padding-bottom: 0.9rem;
+     padding-left: 2.8rem;
+     padding-right: 2.8rem;
+     top: 0.2rem;
+     right: 0.2rem;
+     background-color: var(--secondary-bg);
+ }
+
+ .find-btn:hover,
+ .subscribe-btn:hover {
+     background-color: var(--secondary-bg);
+ }
+
+ .cell1,
+ .cell3 {
+     background-color: var(--cell13);
+
+ }
+
+ .cell2 {
+     background-color: var(--cell2);
+
+ }
+
+ .cell5 {
+     background-color: var(--cell5);
+
+ }
+
+ .cell4,
+ .cell6 {
+     background-color: var(--cell46);
+ }
+
+ .cell4,
+ .cell5,
+ .cell6 {
+     height: 75vh;
+
+ }
+
+ .light-text {
+     color: var(--light-text);
+ }
+
+ .degree {
+     display: inline-block;
+     position: relative;
+     top: -2rem;
+     left: 0.5rem;
+ }
+ .degree2 {
+     display: inline-block;
+     position: relative;
+     top: -0.5rem;
+     left: 0.3rem;
+ }
+
+ .forecast {
+     font-size: 4rem;
+ }
+
+ .subscribe-btn {
+     font-size: 0.8rem;
+     padding-top: 0.9rem;
+     padding-bottom: 0.9rem;
+     padding-left: 2.8rem;
+     padding-right: 2.8rem;
+     top: 0.2rem;
+     right: -0.4rem;
+     background-color: var(--secondary-bg);
+ }
+
+ i img {
+     width: 3rem;
+ }
+
+ a i {
+     width: 1rem;
+     height: 1rem;
+ }
+  a.primary-bg:hover {
+background-color: var(--secondary-bg);
+ }

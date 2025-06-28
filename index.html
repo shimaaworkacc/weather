@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather</title>
+  <meta name="description" content="Weather App - Check the weather in your area">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="text-center primary-bg">
+  <nav class="navbar navbar-expand-lg primary-bg p-4">
+    <div class="container-fluid text-center m-3">
+      <a class="site-logo col-4 row text-start" href="/">
+        <img src="images/logo@2x.png" alt="logo" class="logo col-6">
+        <div class="col-6">
+          <h1 class="fs-6 fw-bold">Weather</h1>
+          <span class="site-description">tagline goes here</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="active-link rounded-pill px-2 py-1">
+            <a class="" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="not-active-link rounded-pill  px-2 py-1">
+            <a class=" " href="#">News</a>
+          </li>
+          <li class="not-active-link rounded-pill  px-2 py-1">
+            <a class=" " href="#">Live</a>
+          </li>
+          <li class="not-active-link rounded-pill  px-2 py-1">
+            <a class=" " href="#">Live cameras</a>
+          </li>
+          <li class="not-active-link rounded-pill  px-2 py-1">
+            <a class=" " href="#">Photos</a>
+          </li>
+          <li class="not-active-link rounded-pill  px-2 py-1">
+            <a class=" " href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <main class="p-5 my-5 overflow-hidden">
+    <form class="m-5 position-relative h-25">
+      <input type="text" id="searchInput"
+        class="form-control search-input rounded-pill p-3 primary-bg border-0 text-light position-absolute"
+        placeholder="Find your location..." aria-label="Search">
+      <button class="btn btn-primary rounded-pill position-absolute find-btn" id="findBtn" type="submit">Find</button>
+    </form>
+
+    <div class="rounded-5 light-text col-10 mx-auto d-flex justify-content-center row my-5 row-gap-2 overflow-hidden">
+      <div class="col1 col-12 col-lg-4 row">
+        <div class="cell1 col-12 p-2 justify-content-between d-flex">
+          <span class="col-6 text-start" id="today">Today</span>
+          <span class="col-6 text-end" id="todayDate">date</span>
+        </div>
+        <div class="cell4 col-12 p-2 text-start">
+          <span id="city">cairo</span>
+          <div class="fw-bolder text-light forecast text-nowrap">
+            <span class="forecast" id="temp"> </span>
+           
+          </div>
+          <img class="w-25 d-block my-4" id="icon1" src="" alt="">
+          <span class="text-start text-blue" id="status1"></span>
+          <div class="d-flex justify-content-evenly mt-5">
+            <div class="d-flex justify-content-around">
+              <img class="p-1" src="images/umberella.png" alt="">
+              <span id="humidity"></span>
+            </div>
+            <div class="d-flex justify-content-around">
+              <img class="p-1" src="images/wind.png" alt="">
+              <span id="wind""></span>
+            </div>
+            <div class=" d-flex justify-content-around">
+                <img class="p-1" src="images/compass.png" alt="">
+                <span id="direction"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col2 col-12 col-lg-4 row">
+        <div class="cell2 col-12 p-2" id="tomorrow">
+          tomorrow
+        </div>
+        <div class="cell5 col-12 p-2">
+          <i class=""><img src="images/sunny.webp" alt="" id="icon2"></i>
+          <div><span class="fw-bolder text-white fs-3" id="temp2high"></span> </div>
+          <br>
+          <div><span class="" id="temp2small"> </span></div> <span
+            class="text-blue" id="status2"></span>
+        </div>
+      </div>
+      <div class="col3 col-12 col-lg-4 row">
+
+        <div class="cell3 col-12 p-2" id="day3">
+          the day after tomorrow
+        </div>
+
+        <div class="cell6 col-12 p-2">
+          <i class=""><img src="images/sunny.webp" alt="" id="icon3"></i>
+          <div><span class="fw-bolder text-white fs-3" id="temp3high"> </span></div>
+          <br>
+          <div><span class="" id="temp3small"> </span></div>
+
+          <span class="text-blue" id="status3"></span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <div class="p-5 w-100 cell5 my-5 row footer">
+
+    <form class="position-relative h-25 col-8">
+      <input type="text"
+        class="form-control search-input rounded-pill p-3 primary-bg border-0 text-light position-absolute"
+        placeholder="Find your location..." aria-label="Search">
+      <button class="btn btn-primary rounded-pill position-absolute subscribe-btn">Subscribe</button>
+    </form>
+
+    <div class="icons col-4 d-flex justify-content-evenly align-items-start">
+      <a href="#" class="rounded-circle primary-bg p-3"> <i class="text-blue fa fa-facebook"></i></a>
+
+      <a href="#" class="rounded-circle primary-bg p-3"> <i class="text-blue fa fa-twitter"></i></a>
+
+      <a href="#" class="rounded-circle primary-bg p-3"> <i class="text-blue fa fa-google-plus"></i></a>
+
+      <a href="#" class="rounded-circle primary-bg p-3"> <i class="text-blue fa fa-pinterest"></i></a>
+
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
